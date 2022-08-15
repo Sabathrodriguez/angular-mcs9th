@@ -3,7 +3,7 @@
 <!-- *ngFor makes it so that the div element repeats itself for each product on the list -->
 <div *ngFor="let el of products">
   <h3>
-    <a [title]="el.name + ' details'">
+    <a [title]="el.name + ' details'" [routerLink]="['/products', el.id]">
       {{ el.name }}
     </a>
   </h3>
